@@ -1,17 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-const path = require('path')
-const withSass = require('@zeit/next-sass');
-module.exports = withSass({
-cssModules: true
-})
-module.exports = {
-sassOptions: {
-includePaths: [path.join(__dirname, 'styles')],
-},
-}
-
+const withVideos = require('next-videos')
 
 module.exports = {
   reactStrictMode: true,
 }
+
+module.exports = withVideos()
