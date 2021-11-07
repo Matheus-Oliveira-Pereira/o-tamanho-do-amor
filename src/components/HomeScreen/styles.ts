@@ -23,12 +23,38 @@ export const Header = styled.div`
     width: 100%;
 `
 export const MenuIten = styled.a`
-    font-family: "GeometricaSans";
-    font-weight: 100;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 2rem;    
-    letter-spacing: 0.1rem;
+
+    &,
+    &:link,
+    &:visited {
+
+        font-family: "GeometricaSans";
+        font-weight: 100;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2rem;    
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        background-color: transparent;
+
+        &:hover {
+
+            transform: translateY(-4px);        
+
+            &::after {
+            transform: scaleX(1.4) scaleY(1.6); /* aumenta no eixo x*/
+            opacity: 0;
+            }
+        }  
+        
+        
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+        }
+    }
 `
 
 export const BgVideo = styled.div`
@@ -86,61 +112,76 @@ export const Sublititle = styled.h2`
 `
 
 export const Button = styled.a`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15rem;
-    
-    
-    position: relative;
-    padding: 0.75rem 2rem;
 
-    text-decoration: none;
+    &,
+    &:link,
+    &:visited {
 
-    border-radius: 10rem;
-    border: none;
-    background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15rem;
+        position: relative;
+        padding: 0.75rem 2rem;
+        text-decoration: none;
+        border-radius: 10rem;
+        border: none;
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.2s;
+        animation: moveInBotton 1s ease-out 0.75s; 
+        animation-fill-mode: backwards;
 
-    
-    
-    cursor: pointer;
-    transition: all 0.2s;
-    animation: moveInBotton 1s ease-out 0.75s; /* 0.75 seg é um delay*/
-    animation-fill-mode: backwards; /* isso faz com que o objeto fique atras até o o momento da animação*/
+        &:hover {
 
-    &:hover {
-        transform: translateY(-3px);
-        /*o eixo y se move para baixo, então para subir tem que ser numero negativo */
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    
+            transform: translateY(-4px);
+            /*o eixo y se move para baixo, então para subir tem que ser numero negativo */
+            box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
+        
+
+            &::after {
+            transform: scaleX(1.4) scaleY(1.6); /* aumenta no eixo x*/
+            opacity: 0;
+            }
+        }   
+
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0 , 0 , 0.2);
+        }
 
         &::after {
-        transform: scaleX(1.4) scaleY(1.6); /* aumenta no eixo x*/
-        opacity: 0;
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 10rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -3; /* define em qual camada vai estar, como esta negativo sera enviado para tras*/
+            transition: all 0.4s;
+            background: #fff;
+
         }
-    }   
 
-    &:active,
-    &:focus {
-        outline: none;
-        transform: translateY(-1px);
-        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+
+        @keyframes moveInBotton {
+            0% {
+                opacity: 0; /*opacidade em 0 pra começar invisivel*/
+                transform: translateY(3rem); /*translatex para animar no eixo x*/
+            }
+
+            100% {
+                opacity: 1; /*opacidade em 1 para ficar visivel*/
+                transform: translate(0); /*tralate 0 para imagem ficar na posição normal*/
+            }
+        }
     }
 
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -3; /* define em qual camada vai estar, como esta negativo sera enviado para tras*/
-        transition: all 0.4s;
-        background: #fff;
-        position: absolute;
-    }
+
 `
 export const ButtonText = styled.span`
     font-family: "Intro";
@@ -148,9 +189,9 @@ export const ButtonText = styled.span`
    
     color: #E595CB;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.8rem;
-    letter-spacing: -5%;
+    
    
 
     &:link,
@@ -163,4 +204,6 @@ export const ButtonText = styled.span`
         padding: 0.3rem;
         transition: all 0.2s;
     } 
+
+
 `
