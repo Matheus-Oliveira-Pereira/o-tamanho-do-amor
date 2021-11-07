@@ -49,7 +49,6 @@ export const Title = styled.h1`
 
 export const TextsContainer = styled.div`
     max-width: 30vw;
-    max-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
