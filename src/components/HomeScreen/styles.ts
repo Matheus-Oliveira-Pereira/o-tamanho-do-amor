@@ -1,27 +1,27 @@
 import styled from 'styled-components'
 
-
-
-interface TitleProps {
-    fontSize?: string,
-    letterSpacing?: string,
-    fontLineHeight?: string,
-}
-
 export const Home = styled.div`
     display: flex;
     flex-direction: column;  
+    align-items: center;
+    justify-content: space-between;
     position : relative;
     height: 100vh;
     width: 100%;
     padding: 4rem;
+
+    @media (max-width: 767px) {
+      padding: 2rem;
+    }
 `
+
 export const Header = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
 `
+
 export const MenuIten = styled.a`
 
     &,
@@ -37,6 +37,7 @@ export const MenuIten = styled.a`
         cursor: pointer;
         transition: all 0.2s;
         background-color: transparent;
+        text-decoration: none;
 
         &:hover {
 
@@ -55,6 +56,15 @@ export const MenuIten = styled.a`
             transform: translateY(-1px);
         }
     }
+
+    @media (max-width: 767px) {
+      &,
+      &:link,
+      &:visited {
+        font-size: 1.3rem;
+      }
+
+    }
 `
 
 export const BgVideo = styled.div`
@@ -66,6 +76,7 @@ export const BgVideo = styled.div`
     z-index: -5;
     overflow: hidden;
 `
+
 export const Video = styled.video`
     height: 100%;
     width: 100%;
@@ -85,33 +96,71 @@ export const Overlay = styled.div`
 `
 
 export const Content = styled.div`
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100%;
-
 `
 
-export const Title = styled.h1<TitleProps>`
+export const TitleUp = styled.h1`
     color: #e595cb;
-    font-size: ${({fontSize}) => fontSize || '12rem'};
     text-transform: uppercase;
-    letter-spacing: 0.6rem;
-    line-height: ${({fontLineHeight}) => fontLineHeight  || '10rem'};
     font-weight: 200;
+    letter-spacing: 0.6rem;
+    font-size: 10rem;
+    line-height: 8rem;
+
+    @media (max-width: 767px) {
+      font-size: 4.9rem;
+      line-height: 6rem;
+    }
+
+    @media (max-width: 358px) {
+      font-size: 3.1rem;
+      line-height: 4rem;
+    }
 `
-export const Sublititle = styled.h2`
+
+export const TitleDown = styled.h1`
+    color: #e595cb;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.6rem;
+    font-size: 12rem;
+    line-height: 10rem;
+
+    @media (max-width: 767px) {
+      font-size: 6rem;
+      line-height: 4rem;
+    }
+
+    @media (max-width: 358px) {
+      font-size: 4rem;
+      line-height: 2rem;
+    }
+`
+
+export const Subtitle = styled.h2`
     margin-top: 2rem;
     font-family: "Intro";
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.2rem;
+
+    @media (max-width: 767px) {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 358px) {
+      font-size: 1.1rem;
+    }
 `
 
 export const Button = styled.a`
+
+    position: absolute;
+    bottom: 10%;
 
     &,
     &:link,
@@ -120,7 +169,6 @@ export const Button = styled.a`
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 15rem;
         position: relative;
         padding: 0.75rem 2rem;
         text-decoration: none;
@@ -186,7 +234,6 @@ export const Button = styled.a`
 export const ButtonText = styled.span`
     font-family: "Intro";
     text-transform: uppercase;
-   
     color: #E595CB;
     font-weight: bold;
     font-size: 1.5rem;
