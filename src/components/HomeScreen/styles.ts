@@ -37,6 +37,7 @@ export const MenuIten = styled.a`
         cursor: pointer;
         transition: all 0.2s;
         background-color: transparent;
+        text-decoration: none;
 
         &:hover {
 

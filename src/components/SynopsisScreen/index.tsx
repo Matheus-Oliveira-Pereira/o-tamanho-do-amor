@@ -4,7 +4,7 @@ import { Container, Title, Text, TextsContainer, ImageWrapper } from './styles'
 
 export const Synopsis: React.FC = () => {
     return (
-      <Container>
+      <Container id="synopsis">
         <ImageWrapper>
           <Image src="/capa.jpg" alt="Book Cover" width={421} height={556} layout="responsive"/>
         </ImageWrapper>
