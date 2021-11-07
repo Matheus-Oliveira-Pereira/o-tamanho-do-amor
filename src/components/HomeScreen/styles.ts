@@ -29,6 +29,7 @@ export const MenuIten = styled.a`
     text-transform: uppercase;
     font-size: 2rem;    
     letter-spacing: 0.1rem;
+    text-decoration: none;
 `
 
 export const BgVideo = styled.div`

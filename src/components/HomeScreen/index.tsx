@@ -8,7 +8,6 @@ interface HomeScreenProps {
 export const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) => {
     return (
         <div>
-
             <BgVideo>
                 <Overlay/>
                 <Video autoPlay muted loop>
@@ -16,10 +15,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) =>
                 </Video>
             </BgVideo>
             
-             <Home >
-
+             <Home>
                 <Header> 
-                    <MenuIten>sinopse do livro</MenuIten>
+                    <MenuIten href="#synopsis">sinopse do livro</MenuIten>
                     <MenuIten>sobre o autor</MenuIten>
                     <MenuIten>lançamento</MenuIten>
                 </Header>
@@ -28,9 +26,8 @@ export const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) =>
                     <Title fontSize='9.67rem' fontLineHeight='8rem' >O tamanho</Title>
                     <Title>Do amor</Title>
                     <Sublititle>DÉCIO SABBATINI BARBOSA</Sublititle>
-                    <Button href="#" > <ButtonText> CONHECER</ButtonText> </Button>
+                    <Button href="#synopsis" > <ButtonText> CONHECER</ButtonText> </Button>
                 </Content>
-       
             </Home>
         </div>
     )
