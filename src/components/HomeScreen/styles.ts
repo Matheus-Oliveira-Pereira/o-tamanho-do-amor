@@ -1,8 +1,11 @@
 import styled from 'styled-components'
 
+
+
 interface TitleProps {
     fontSize?: string,
     letterSpacing?: string,
+    fontLineHeight?: string,
 }
 
 export const Home = styled.div`
@@ -11,7 +14,7 @@ export const Home = styled.div`
     position : relative;
     height: 100vh;
     width: 100%;
-    padding: 1.875rem;
+    padding: 4rem;
 `
 export const Header = styled.div`
     display: flex;
@@ -20,10 +23,12 @@ export const Header = styled.div`
     width: 100%;
 `
 export const MenuIten = styled.a`
+    font-family: "GeometricaSans";
+    font-weight: 100;
     color: #fff;
-    font-weight: 400;
     text-transform: uppercase;
-    font-size: 1.51rem;    
+    font-size: 2rem;    
+    letter-spacing: 0.1rem;
 `
 
 export const BgVideo = styled.div`
@@ -65,18 +70,19 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h1<TitleProps>`
-    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
     color: #e595cb;
-    font-size: ${({fontSize}) => fontSize || '6.7rem'};
-    letter-spacing: -0.1rem;
-    font-family: 'Rubik', sans-serif;
+    font-size: ${({fontSize}) => fontSize || '12rem'};
     text-transform: uppercase;
-    font-weight: 300;
-
+    letter-spacing: 0.6rem;
+    line-height: ${({fontLineHeight}) => fontLineHeight  || '10rem'};
+    font-weight: 200;
 `
 export const Sublititle = styled.h2`
+    margin-top: 2rem;
+    font-family: "Intro";
     text-transform: uppercase;
     color: #fff;
+    letter-spacing: 0.2rem;
 `
 
 export const Button = styled.a`
@@ -137,6 +143,7 @@ export const Button = styled.a`
     }
 `
 export const ButtonText = styled.span`
+    font-family: "Intro";
     text-transform: uppercase;
    
     color: #E595CB;

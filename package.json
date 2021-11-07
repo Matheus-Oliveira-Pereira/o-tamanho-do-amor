@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/node": "16.11.6",
     "@types/react": "17.0.33",
+    "babel-plugin-styled-components": "^1.13.3",
     "eslint": "7",
     "eslint-config-next": "12.0.2",
     "styled-components": "^5.3.3",

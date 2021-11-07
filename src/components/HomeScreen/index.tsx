@@ -25,7 +25,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) =>
                 </Header>
 
                 <Content>            
-                    <Title fontSize='5.192rem' >O tamanho</Title>
+                    <Title fontSize='9.67rem' fontLineHeight='8rem' >O tamanho</Title>
                     <Title>Do amor</Title>
                     <Sublititle>DÉCIO SABBATINI BARBOSA</Sublititle>
                     <Button href="#" > <ButtonText> CONHECER</ButtonText> </Button>
