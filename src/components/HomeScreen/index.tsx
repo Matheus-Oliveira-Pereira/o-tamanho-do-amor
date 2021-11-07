@@ -1,4 +1,4 @@
-import {Home, Header, BgVideo, Video, Overlay, Content, Title} from './styles'
+import {Home, Header, BgVideo, Video, Overlay, Content, Title, Sublititle, Button, MenuIten,ButtonText} from './styles'
 import VideoDeFundo from '../../assets/bg-video.mp4'
 
 interface HomeScreenProps {
@@ -7,34 +7,31 @@ interface HomeScreenProps {
 
 export const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) => {
     return (
-        <Home >
+        <div>
+
             <BgVideo>
                 <Overlay/>
                 <Video autoPlay muted loop>
                     <source type="video/mp4" src={VideoDeFundo}/> 
                 </Video>
             </BgVideo>
-
-            <Header> 
-                <p>
-                    SINOPSE DO LIVRO
-                </p>
-                <p>
-                    SINOPSE DO AUTOR
-                </p>
-                <p>
-                    SINOPSE DO LANÇAMENTO
-                </p>
-            </Header>
-
-            <Content>            
-                <Title fontSize='5.192rem' >O tamanho</Title>
-                <Title>Do amor</Title>
-
-            </Content>
-
-
             
-        </Home>
+             <Home >
+
+                <Header> 
+                    <MenuIten>sinopse do livro</MenuIten>
+                    <MenuIten>sobre o autor</MenuIten>
+                    <MenuIten>lançamento</MenuIten>
+                </Header>
+
+                <Content>            
+                    <Title fontSize='5.192rem' >O tamanho</Title>
+                    <Title>Do amor</Title>
+                    <Sublititle>DÉCIO SABBATINI BARBOSA</Sublititle>
+                    <Button href="#" > <ButtonText> CONHECER</ButtonText> </Button>
+                </Content>
+       
+            </Home>
+        </div>
     )
 }
