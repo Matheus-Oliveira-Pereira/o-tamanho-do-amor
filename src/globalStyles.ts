@@ -36,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.6rem;
         box-sizing: border-box; 
         font-family: "GeometricaSans";
+        background-color: #FCF9F9;
     }
 
 `;
