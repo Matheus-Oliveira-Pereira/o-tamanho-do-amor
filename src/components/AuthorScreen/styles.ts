@@ -5,15 +5,17 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #210720;
     gap: 15rem;
 
     @media (max-width: 1280px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 10rem;
       padding: 2rem;
+      justify-content: center;
+      align-items: center;
     }
 ;
 `
@@ -35,6 +37,10 @@ export const Title = styled.h1`
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.2rem;
+
+    @media (max-width: 650px) {
+        font-size: 2.5rem;
+    }
    
     
 `
@@ -56,5 +62,14 @@ export const ImageWrapper = styled.div`
     transform: translateX(-4rem) scale(1);
     transition: all 0.5s;
     backface-visibility: hidden;
+
+    @media (max-width: 1280px) {
+        margin-left: 80px;
+    }
+
+    @media (max-width: 650px) {
+        height: 50vw;
+        width: 50vw;
+    }
 `
 

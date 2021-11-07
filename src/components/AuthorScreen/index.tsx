@@ -34,7 +34,7 @@ export const AuthorScreen: React.FC<AuthorScreenProps> = (props: AuthorScreenPro
            </ContainerAuthorText>
 
            <ImageWrapper>
-               <Image src='/author.png' alt='Author picture'  layout='fill' objectFit='cover'/>
+               <Image src='/author.png' alt='Author picture'  width={500} height={500} layout='responsive' objectFit='cover'/>
            </ImageWrapper>
 
 

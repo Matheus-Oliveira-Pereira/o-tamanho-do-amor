@@ -17,8 +17,8 @@ const Home: NextPage = () => {
       </Head>
       <GlobalStyle/>
       <HomeScreen/>
-      <AuthorScreen/>
       <Synopsis/>
+      <AuthorScreen/>
     
     </div>
   )
