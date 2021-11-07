@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { HomeScreen } from '../components/HomeScreen'
 import { Sinopse } from '../components/Sinopse'
+import {AuthorScreen} from '../components/AuthorScreen'
 import GlobalStyle from '../globalStyles'
 
 const Home: NextPage = () => {
@@ -16,7 +17,8 @@ const Home: NextPage = () => {
       </Head>
       <GlobalStyle/>
       <HomeScreen/>
-      <Sinopse></Sinopse>
+      <Sinopse/>
+      <AuthorScreen/>
     
     </div>
   )
