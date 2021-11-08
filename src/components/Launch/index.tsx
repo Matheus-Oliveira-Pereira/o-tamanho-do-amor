@@ -46,12 +46,12 @@ const Launch: React.FC = () => {
 
       <RowContainer>
         <SocialMedia onClick={() => window.open('https://www.instagram.com/deciosabbatinibarbosa/', '_blank')}>
-          <Image alt="instagram logo" src="/instagram.png" width={28} height={28}/>
+          <Image alt="instagram logo" src="/instagram.png" width={26} height={26}/>
           <SmallText>@deciosabbatinibarbosa</SmallText>
         </SocialMedia>
 
         <SocialMedia onClick={() => window.open('https://www.facebook.com/AtritoArte/', '_blank')}>
-          <Image alt="facebook logo" src="/facebook.png" width={28} height={28}/>
+          <Image alt="facebook logo" src="/facebook.png" width={26} height={26}/>
           <SmallText>facebook.com/AtritoArte</SmallText>
         </SocialMedia>
       </RowContainer>

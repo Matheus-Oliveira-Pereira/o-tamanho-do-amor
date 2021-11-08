@@ -35,10 +35,10 @@ export const Text = styled.p`
 `
 
 export const SmallText = styled(Text)`
-  font-size: 2.5rem;
+  font-size: 2rem;
 
   @media (max-width: 472px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   
 `
@@ -67,8 +67,8 @@ export const SocialMedia = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 4rem;
-  gap: 2rem;
+  padding-top: 2rem;
+  gap: 1rem;
   cursor: pointer;
 
   @media (max-width: 1100px) {
