@@ -15,7 +15,7 @@ export const Synopsis: React.FC = () => {
             torna-se, na verdade, um emaranhado de diferentes acontecimentos. Adolescentes e adultos expõem 
             particularidades de suas famílias, amizades, paqueras e, claro, surgem discussões. Muitas discussões. 
             Surpresas ocorrem ao longo da viagem e depois, muitas outras também. Mas afinal, o que seria o misterioso 
-            Domo Mágico? Como uma criança autista poderia ser o motivo principal de grande revolução tecnológica?
+            Domo Mágico? Como uma criança autista poderia ser o motivo principal de uma grande revolução tecnológica?
           </Text>
         </TextsContainer>
       </Container>
