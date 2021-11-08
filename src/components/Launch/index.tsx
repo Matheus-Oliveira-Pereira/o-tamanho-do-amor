@@ -6,7 +6,7 @@ import { Container, DateAndAddress, Title, Text, Bold } from './styles';
 
 const Launch: React.FC = () => {
   return (
-    <Container>
+    <Container id="launch">
       <Title>LANÇAMENTO</Title>
       <DateAndAddress>
         <div>
