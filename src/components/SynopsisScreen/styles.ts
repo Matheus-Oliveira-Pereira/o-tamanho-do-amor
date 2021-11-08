@@ -21,7 +21,6 @@ export const Text = styled.p`
     font-size: 2.5rem;
     line-height: 3.5rem;
     text-align: justify;
-    letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
 
     @media (max-width: 1600px) {
