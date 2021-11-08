@@ -12,7 +12,7 @@ import {
     MenuIten,
     ButtonText,
   } from './styles'
-import VideoDeFundo from '../../assets/bg-video.mp4'
+import VideoDeFundo from '../../assets/galaxy-video.mp4'
 
 interface HomeScreenProps {
    
