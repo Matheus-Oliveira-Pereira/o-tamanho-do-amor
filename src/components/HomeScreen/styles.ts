@@ -101,6 +101,7 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: relative;
 `
 
 export const TitleUp = styled.h1`
@@ -160,7 +161,7 @@ export const Subtitle = styled.h2`
 export const Button = styled.a`
 
     position: absolute;
-    bottom: 10%;
+    bottom: -15vh;
 
     &,
     &:link,
