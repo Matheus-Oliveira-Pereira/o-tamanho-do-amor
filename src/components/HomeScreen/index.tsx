@@ -31,7 +31,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) =>
              <Home>
                 <Header> 
                     <MenuIten href="#synopsis">sinopse do livro</MenuIten>
-                    <MenuIten>sobre o autor</MenuIten>
+                    <MenuIten href="#author">sobre o autor</MenuIten>
                     <MenuIten>lançamento</MenuIten>
                 </Header>
 

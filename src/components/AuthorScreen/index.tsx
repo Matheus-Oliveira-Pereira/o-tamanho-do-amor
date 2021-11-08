@@ -9,7 +9,7 @@ interface AuthorScreenProps{
 export const AuthorScreen: React.FC<AuthorScreenProps> = (props: AuthorScreenProps) => {
 
     return(
-       <Container>
+       <Container id="author">
            <ContainerAuthorText>
                 <Title>décio sabbatini barbosa</Title>
                 <Text>
