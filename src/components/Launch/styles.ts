@@ -4,18 +4,19 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 4rem 2rem;
-  min-height: 65vh;
+  justify-content: space-between;
+  padding: 4rem 2rem 0 2rem;
+  min-height: 70vh;
   
   @media (max-width: 800px) {
       min-height: 75vh;
   }
 `
 
-export const Title = styled.h1`
+export const Title = styled.strong`
   font-size: 4rem;
   color: #62466F;
+  padding: 2rem 0;
 
   @media (max-width: 472px) {
     font-size: 3rem;
@@ -33,20 +34,59 @@ export const Text = styled.p`
   }
 `
 
+export const SmallText = styled(Text)`
+  font-size: 2.5rem;
+
+  @media (max-width: 472px) {
+    font-size: 2rem;
+  }
+  
+`
+
 export const Bold = styled.strong`
   color: #7B7A7A;
   font-size: 2rem;
 `
 
-export const DateAndAddress = styled.div`
+export const RowContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20rem;
+  padding: 2rem 0;
 
   @media (max-width: 1100px) {
     flex-direction: column;
     gap: 5rem;
     padding: 5rem 0;
+  }
+`
+
+export const SocialMedia = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  gap: 2rem;
+  cursor: pointer;
+
+  @media (max-width: 1100px) {
+    padding-top: 2rem;
+  }
+`
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+export const CountdownWrapper = styled.div`
+  padding-top: 5rem;
+
+  @media (max-width: 1100px) {
+    padding-top: 3rem;
   }
 `
