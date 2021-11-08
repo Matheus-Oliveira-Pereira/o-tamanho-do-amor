@@ -45,11 +45,13 @@ export const Title = styled.h1`
 `
 
 export const Text = styled.p`
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
     font-size: 2.5rem;
     line-height: 4rem;
     color: #F3F3F3;
     text-align: justify;
     letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
 ` 
 
 export const ImageWrapper = styled.div`

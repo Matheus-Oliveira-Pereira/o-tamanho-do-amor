@@ -16,11 +16,13 @@ export const Container = styled.div`
 ` 
 
 export const Text = styled.p`
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
     color: #7B7A7A;
     font-size: 2.5rem;
     line-height: 3.5rem;
     text-align: justify;
     letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
 
     @media (max-width: 1600px) {
       font-size: 2.2rem;
