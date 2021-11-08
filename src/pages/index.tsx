@@ -1,10 +1,17 @@
+import { useEffect } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+
 import { HomeScreen } from '../components/HomeScreen'
 import { Synopsis } from '../components/SynopsisScreen'
 import GlobalStyle from '../globalStyles'
 
 const Home: NextPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <div>
       <Head>
