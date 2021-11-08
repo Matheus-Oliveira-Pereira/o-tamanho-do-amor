@@ -84,7 +84,7 @@ export const Video = styled.video`
 `
 
 export const Overlay = styled.div`
-    background: rgba(68,0,45,0.41);
+    background: rgba(37,0,25,0.41);
     position: absolute;
     top: 0;
     left: 0;
