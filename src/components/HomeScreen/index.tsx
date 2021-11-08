@@ -39,9 +39,10 @@ export const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) =>
                     <TitleUp>O tamanho</TitleUp>
                     <TitleDown>Do amor</TitleDown>
                     <Subtitle>DÉCIO SABBATINI BARBOSA</Subtitle>
+                    <Button href="#synopsis"><ButtonText>CONHECER</ButtonText></Button>
                 </Content>
 
-                <Button href="#synopsis"><ButtonText>CONHECER</ButtonText></Button>
+               <div/>
             </Home>
         </div>
     )
