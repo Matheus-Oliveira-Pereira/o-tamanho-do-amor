@@ -28,7 +28,7 @@ export const AuthorScreen: React.FC<AuthorScreenProps> = (props: AuthorScreenPro
                     uma fratura no pé, conseguiu passar para o papel
                     essa trama. Novas histórias
                     virão, mas espera-se que,
-                    para isso, o autor não precise quebrar o outro Dé.
+                    para isso, o autor não precise quebrar o outro pé.
                 </Text>
            </ContainerAuthorText>
 
