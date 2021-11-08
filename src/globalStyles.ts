@@ -39,6 +39,44 @@ const GlobalStyle = createGlobalStyle`
         background-color: #FCF9F9;
     }
 
+    
+      /* width */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #2b2b2b;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.79);
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(189, 189, 189);
+    }
+    
+    @media only screen and (max-width : 1180px) {
+      /* width */
+      ::-webkit-scrollbar {
+          display: none;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+          display: none;
+      }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+          display: none;
+      }
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+          display: none;
+      }
+  }
+
 `;
  
 export default GlobalStyle;
