@@ -30,8 +30,8 @@ export const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) =>
             
              <Home>
                 <Header> 
-                    <MenuIten href="#synopsis">sinopse do livro</MenuIten>
-                    <MenuIten href="#author">sobre o autor</MenuIten>
+                    <MenuIten href="#synopsis">sinopse</MenuIten>
+                    <MenuIten href="#author">autor</MenuIten>
                     <MenuIten href="#launch">lançamento</MenuIten>
                 </Header>
 
