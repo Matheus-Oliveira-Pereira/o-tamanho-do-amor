@@ -19,7 +19,12 @@ export const Header = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    width: 70%;
+
+    @media (max-width: 1024px) {
+      padding: 2rem 1rem;
+      width: 100vw;
+    }
 `
 
 export const MenuIten = styled.a`
@@ -109,7 +114,7 @@ export const TitleUp = styled.h1`
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 0.6rem;
-    font-size: 10rem;
+    font-size: 9.8rem;
     line-height: 8rem;
 
     @media (max-width: 767px) {

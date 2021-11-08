@@ -57,7 +57,7 @@ export const RowContainer = styled.div`
 
   @media (max-width: 1100px) {
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
     padding: 5rem 0;
   }
 `
@@ -72,7 +72,7 @@ export const SocialMedia = styled.div`
   cursor: pointer;
 
   @media (max-width: 1100px) {
-    padding-top: 2rem;
+    padding-top: 0;
   }
 `
 

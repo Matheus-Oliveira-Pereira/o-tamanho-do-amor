@@ -20,6 +20,7 @@ export const Text = styled.p`
     font-size: 2.5rem;
     line-height: 3.5rem;
     text-align: justify;
+    letter-spacing: 2px;
 
     @media (max-width: 1600px) {
       font-size: 2.2rem;

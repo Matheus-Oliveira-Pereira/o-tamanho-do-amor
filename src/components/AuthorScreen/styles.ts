@@ -49,7 +49,7 @@ export const Text = styled.p`
     line-height: 4rem;
     color: #F3F3F3;
     text-align: justify;
-
+    letter-spacing: 2px;
 ` 
 
 export const ImageWrapper = styled.div`
