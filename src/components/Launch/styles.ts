@@ -81,6 +81,10 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1100px) {
+    padding: 0 2rem;
+  }
 `
 
 export const CountdownWrapper = styled.div`
@@ -121,4 +125,8 @@ export const CreditContainer = styled.div`
 export const CreditsText = styled.p`
   color: #fff;
   font-size: 2rem;
+`
+
+export const ClickableImage = styled.div`
+  cursor: pointer;
 `

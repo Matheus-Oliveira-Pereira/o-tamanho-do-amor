@@ -15,7 +15,8 @@ import {
   CountdownWrapper,
   Credits,
   CreditsText,
-  CreditContainer
+  CreditContainer,
+  ClickableImage
 } from './styles';
 
 const Launch: React.FC = () => {
@@ -63,38 +64,46 @@ const Launch: React.FC = () => {
         <CreditContainer>
           <Image alt="Beatriz Schwartz" src="/Beatriz.png" width={30} height={30}/>
           <CreditsText>Beatriz Schwartz</CreditsText>
-          <Image 
-            alt="Github da Beatriz" 
-            src="/github.png" 
-            width={28} 
-            height={28} 
-            onClick={() => window.open('https://github.com/beatrizsabbatini', '_blank')}
-          />
-          <Image 
-            alt="Linkedin da Beatriz" 
-            src="/linkedin.png" 
-            width={26} 
-            height={26}
-            onClick={() => window.open('https://www.linkedin.com/in/beatriz-schwartz/', '_blank')}
-          />
+          <ClickableImage>
+            <Image 
+              alt="Github da Beatriz" 
+              src="/github.png" 
+              width={28} 
+              height={28} 
+              onClick={() => window.open('https://github.com/beatrizsabbatini', '_blank')}
+            />
+          </ClickableImage>
+          <ClickableImage>
+            <Image 
+              alt="Linkedin da Beatriz" 
+              src="/linkedin.png" 
+              width={26} 
+              height={26}
+              onClick={() => window.open('https://www.linkedin.com/in/beatriz-schwartz/', '_blank')}
+            />
+          </ClickableImage>
         </CreditContainer>
         <CreditContainer>
           <Image alt="Matheus Oliveira"  src="/Matheus.png" width={30} height={30} />
           <CreditsText>Matheus Oliveira</CreditsText>
-          <Image 
-            alt="Github do Matheus" 
-            src="/github.png" 
-            width={30} 
-            height={30} 
-            onClick={() => window.open('https://github.com/Matheus-Oliveira-Pereira', '_blank')}
-          />
-          <Image 
-            alt="Linkedin do Matheus" 
-            src="/linkedin.png" 
-            width={26} 
-            height={26}
-            onClick={() => window.open('https://www.linkedin.com/in/matheus-oliveira-pereira/', '_blank')}
-          />
+          <ClickableImage>
+            <Image 
+              alt="Github do Matheus" 
+              src="/github.png" 
+              width={30} 
+              height={30} 
+              onClick={() => window.open('https://github.com/Matheus-Oliveira-Pereira', '_blank')}
+            />
+          </ClickableImage>
+          <ClickableImage>
+            <Image 
+              alt="Linkedin do Matheus" 
+              src="/linkedin.png" 
+              width={26} 
+              height={26}
+              onClick={() => window.open('https://www.linkedin.com/in/matheus-oliveira-pereira/', '_blank')}
+            />
+           </ClickableImage>
         </CreditContainer>
       </Credits>
     </Container>
