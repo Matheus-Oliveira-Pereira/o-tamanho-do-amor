@@ -6,6 +6,8 @@ import { HomeScreen } from '../components/HomeScreen'
 import {AuthorScreen} from '../components/AuthorScreen'
 import { Synopsis } from '../components/SynopsisScreen'
 import GlobalStyle from '../globalStyles'
+import ParallaxBox from '../components/ParallaxBox'
+import Launch from '../components/Launch'
 
 const Home: NextPage = () => {
 
@@ -26,7 +28,8 @@ const Home: NextPage = () => {
       <HomeScreen/>
       <Synopsis/>
       <AuthorScreen/>
-    
+      <ParallaxBox/>
+      <Launch/>
     </div>
   )
 }

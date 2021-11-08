@@ -19,8 +19,7 @@ export const AuthorScreen: React.FC<AuthorScreenProps> = (props: AuthorScreenPro
                     Estabeleceu-se  na cidade como professor
                     universitário. fez muitas
                     amizades. casou-se e tem
-                    uma filha. Desde criança foi
-                    amante da leitura. Embora já
+                    uma filha. Embora já
                     tenha escrito alguns capítulos de livros e muitos artigos
                     científicos, sempre acalentou o sonho de escrever um romance. Somente em
                     2020, durante 

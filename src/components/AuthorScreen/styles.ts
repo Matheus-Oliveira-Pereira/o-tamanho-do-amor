@@ -12,8 +12,8 @@ export const Container = styled.div`
 
     @media (max-width: 1280px) {
       flex-direction: column-reverse;
-      gap: 10rem;
-      padding: 2rem;
+      gap: 4rem;
+      padding: 5rem 2rem;
       justify-content: center;
       align-items: center;
     }
