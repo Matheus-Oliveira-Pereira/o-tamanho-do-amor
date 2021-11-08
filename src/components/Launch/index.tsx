@@ -12,7 +12,10 @@ import {
   SocialMedia, 
   SmallText, 
   Content, 
-  CountdownWrapper 
+  CountdownWrapper,
+  Credits,
+  CreditsText,
+  CreditContainer
 } from './styles';
 
 const Launch: React.FC = () => {
@@ -55,6 +58,45 @@ const Launch: React.FC = () => {
           <SmallText>facebook.com/AtritoArte</SmallText>
         </SocialMedia>
       </RowContainer>
+      <Credits>
+        <CreditsText>Este site foi desenvolvido por</CreditsText>
+        <CreditContainer>
+          <Image alt="Beatriz Schwartz" src="/Beatriz.png" width={30} height={30}/>
+          <CreditsText>Beatriz Schwartz</CreditsText>
+          <Image 
+            alt="Github da Beatriz" 
+            src="/github.png" 
+            width={28} 
+            height={28} 
+            onClick={() => window.open('https://github.com/beatrizsabbatini', '_blank')}
+          />
+          <Image 
+            alt="Linkedin da Beatriz" 
+            src="/linkedin.png" 
+            width={26} 
+            height={26}
+            onClick={() => window.open('https://www.linkedin.com/in/beatriz-schwartz/', '_blank')}
+          />
+        </CreditContainer>
+        <CreditContainer>
+          <Image alt="Matheus Oliveira"  src="/Matheus.png" width={30} height={30} />
+          <CreditsText>Matheus Oliveira</CreditsText>
+          <Image 
+            alt="Github do Matheus" 
+            src="/github.png" 
+            width={30} 
+            height={30} 
+            onClick={() => window.open('https://github.com/Matheus-Oliveira-Pereira', '_blank')}
+          />
+          <Image 
+            alt="Linkedin do Matheus" 
+            src="/linkedin.png" 
+            width={26} 
+            height={26}
+            onClick={() => window.open('https://www.linkedin.com/in/matheus-oliveira-pereira/', '_blank')}
+          />
+        </CreditContainer>
+      </Credits>
     </Container>
   )
 }

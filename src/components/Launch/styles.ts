@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 2rem 0 2rem;
+  padding: 4rem 0 0 0;
   min-height: 70vh;
   
   @media (max-width: 800px) {
@@ -89,4 +89,36 @@ export const CountdownWrapper = styled.div`
   @media (max-width: 1100px) {
     padding-top: 3rem;
   }
+`
+
+export const Credits = styled.div`
+  background-color: #373737;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+`
+
+export const CreditContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 4rem;
+  gap: 1rem;
+
+  @media (max-width: 1100px) {
+    padding-left: 0;
+  }
+`
+
+export const CreditsText = styled.p`
+  color: #fff;
+  font-size: 2rem;
 `
