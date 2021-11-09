@@ -59,6 +59,7 @@ export const RowContainer = styled.div`
     flex-direction: column;
     gap: 3rem;
     padding: 5rem 0;
+    align-items: flex-start;
   }
 `
 

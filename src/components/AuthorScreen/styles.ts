@@ -47,10 +47,20 @@ export const Title = styled.h1`
 export const Text = styled.p`
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
     font-size: 2.5rem;
-    line-height: 4rem;
+    line-height: 3.6rem;
     color: #F3F3F3;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
+
+    @media (max-width: 650px) {
+      font-size: 2.2rem;
+      line-height: 3.4rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
 ` 
 
 export const ImageWrapper = styled.div`

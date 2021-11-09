@@ -243,7 +243,8 @@ export const ButtonText = styled.span`
     color: #E595CB;
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 1.2rem;
+    padding-top: 1px;
     
    
 

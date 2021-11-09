@@ -17,7 +17,7 @@ export const AuthorScreen: React.FC<AuthorScreenProps> = (props: AuthorScreenPro
                     Norte do Paraná, em Londrina, onde formou-se como Farmacêutico-Bioquímico na 
                     Universidade Estadual de Londrina.
                     Estabeleceu-se  na cidade como professor
-                    universitário. fez muitas
+                    universitário. Fez muitas
                     amizades. casou-se e tem
                     uma filha. Embora já
                     tenha escrito alguns capítulos de livros e muitos artigos
