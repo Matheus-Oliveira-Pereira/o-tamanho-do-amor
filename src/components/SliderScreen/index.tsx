@@ -54,14 +54,6 @@ export const Card = React.memo(function (props: StackedCarouselSlideProps) {
 
 });
 
-// export const CodeHighlight = React.memo(function (props: { code: string }) {
-//   return (
-//     <Box p={0} pt={1} pb={1}>
-//       <Highlight className='typescript'>{props.code}</Highlight>
-//     </Box>
-//   );
-// });
-
 
 const SliderScreen = (props: props) => {
 

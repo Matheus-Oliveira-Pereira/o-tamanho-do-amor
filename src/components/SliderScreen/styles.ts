@@ -1,16 +1,12 @@
 import styled from 'styled-components'
 
-
-// interface SliderImgeProps{
-//   numero: number;
-// }
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 `
 export const Title = styled.h1`
     color: #7B7A7A;
