@@ -23,6 +23,7 @@ export const Text = styled.p`
     text-align: justify;
     hyphens: auto;
     font-family: 'Roboto', sans-serif;
+    hyphens: manual;
 
     @media (max-width: 900px) {
       font-size: 2.2rem;
